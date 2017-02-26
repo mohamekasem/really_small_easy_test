@@ -14,10 +14,10 @@ module.exports ={
 	//insert books controller
 	insertBooks : function (req, res) {
 		var body = req.body;
-		// for(var i = 0;i< body.length; i++){
-		// 	var title = body[i].title;
-		// 	var auther = body[i].auther;
-		// 	var pageNumber = body[i].pageNumber;
+		for(var i = 0;i< body.length; i++){
+			var title = body[i].title;
+			var auther = body[i].auther;
+			var pageNumber = body[i].pageNumber;
 			Book.create({
 				title : title,
 				auther : auther,
@@ -30,7 +30,7 @@ module.exports ={
 				res.json(data)
 			}
 			})	
-		//}
+		}
 		//res.send('you data saved')
 	},
 	getByTitel : function(req, res){
