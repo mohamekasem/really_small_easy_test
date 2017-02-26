@@ -6,7 +6,7 @@ This is a small test to check what did you learn in the bast two days.
  mocha server/book/spec.js 
 
 - make the server running by running :
- nodemon server/server.js
+ npm start
 
  -the code written in the files may have some errors that you need to fix
  -finish implementing the missing functions and routes in the files
