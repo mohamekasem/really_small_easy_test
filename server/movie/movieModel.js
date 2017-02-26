@@ -1,18 +1,18 @@
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
-var movieSchema = new mongoose.Schema({
-	name : {
-		type : String,
-		required : true
+let movieSchema = new mongoose.Schema({
+	name: {
+		type: String,
+		required: true,
 	},
-	director : {
-		type : String
+	director: {
+		type: String,
 	},
-	rate : {
-		type : Number
-	}
+	rate: {
+		type: Number,
+	},
 });
 
-var movie = mongoose.model('movie', movieSchema);
+let movie = mongoose.model('movie', movieSchema);
 
-module.exports = movie; 
+module.exports = movie;
